@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
       child: RotationTransition(
         turns: state?const AlwaysStoppedAnimation( 180/ 360): const AlwaysStoppedAnimation( 360/ 360),
         child: const Image(
-          image: AssetImage('assets/WhatsApp Image 2022-06-18 at 12.29 1 (2).png',
+          image: AssetImage('assets/splash_logo.png',
           ),
         ),
       ),

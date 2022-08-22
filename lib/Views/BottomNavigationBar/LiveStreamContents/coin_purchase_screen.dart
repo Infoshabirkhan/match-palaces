@@ -70,7 +70,7 @@ class _CoinPurchaseScreenState extends State<CoinPurchaseScreen> {
                 Expanded(child: Align(
                   alignment: Alignment.centerLeft,
                   child: Image(
-                    image: const AssetImage('assets/image (2).png'),
+                    image: const AssetImage('assets/image-(2).png'),
                     height: 90.sp,
                     width: 90.sp,
                     fit: BoxFit.fill,

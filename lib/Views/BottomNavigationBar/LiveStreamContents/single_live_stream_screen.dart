@@ -98,7 +98,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                       child: ClipRRect(
                           borderRadius: BorderRadius.circular(30.sp),
                           child: const Image(
-                            image: AssetImage('assets/Rectangle 7 (3).png'),
+                            image: AssetImage('assets/Rectangle-7-(3).png'),
                             fit: BoxFit.fill,
                         ),
                       ),
@@ -130,7 +130,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(30.sp),
                         child: const Image(
-                          image: AssetImage('assets/Rectangle 7 (5).png'),
+                          image: AssetImage('assets/Rectangle-7-(5).png'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -146,7 +146,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(30.sp),
                         child: const Image(
-                          image: AssetImage('assets/Rectangle 7 (1).png'),
+                          image: AssetImage('assets/Rectangle-7-(1).png'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -176,7 +176,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30.sp),
                     child: const Image(
-                      image: AssetImage('assets/Rectangle 7 (3).png'),
+                      image: AssetImage('assets/Rectangle-7-(3).png'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -227,7 +227,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                     child: Align(
                     alignment: Alignment.centerLeft,
                     child: Image(
-                      image: AssetImage('assets/image 1.png'),
+                      image: AssetImage('assets/image-1.png'),
                     ),
                   ),),
                 ],
@@ -298,7 +298,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(30.sp),
                       child: Image(
-                        image: const AssetImage('assets/Rectangle 7 (2).png'),
+                        image: const AssetImage('assets/Rectangle-7-(2).png'),
                         fit: BoxFit.fill,
                         height: 30.sp,
                         width: 30.sp,
@@ -355,7 +355,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(30.sp),
                       child: Image(
-                        image: const AssetImage('assets/Rectangle 7 (4).png'),
+                        image: const AssetImage('assets/Rectangle-7-(4).png'),
                         fit: BoxFit.fill,
                         height: 30.sp,
                         width: 30.sp,
@@ -412,7 +412,7 @@ class _SingleLiveStreamScreenState extends State<SingleLiveStreamScreen> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(30.sp),
                       child: Image(
-                        image: const AssetImage('assets/Rectangle 7 (3).png'),
+                        image: const AssetImage('assets/Rectangle-7-(3).png'),
                         fit: BoxFit.fill,
                         height: 30.sp,
                         width: 30.sp,

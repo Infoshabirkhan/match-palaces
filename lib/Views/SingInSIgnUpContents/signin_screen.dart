@@ -1,12 +1,15 @@
 import 'package:bigo/Model/controllers/app_colors.dart';
 import 'package:bigo/Views/BottomNavigationBar/home_page_view.dart';
+import 'package:bigo/Views/SingInSIgnUpContents/gmail_information_screen.dart';
 import 'package:bigo/Views/SingInSIgnUpContents/signup_screen.dart';
 import 'package:bigo/Views/WelcomeScreenContents/welcome_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -39,7 +42,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
           ),
           //SizedBox(height: 30.sp,),
-          Text('Sing In',
+          Text('Sign In',
             textAlign: TextAlign.left,
             style: GoogleFonts.roboto(
               fontWeight: FontWeight.w500,
@@ -153,8 +156,31 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
           ),
           SizedBox(height: 50.sp,),
-          CustomButton(textColor: Colors.white,text: 'Continue', onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePageView()));
+          CustomButton(textColor: Colors.white,text: 'Continue', onPressed: () async {
+
+            FocusScope.of(context).unfocus();
+            try {
+              UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+                email: emailController.text,
+                password: passController.text,
+
+              );
+              if(userCredential.user != null){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePageView()));
+
+              }
+              emailController.clear();
+              passController.clear();
+            } on FirebaseAuthException catch (e) {
+
+
+              Fluttertoast.showToast(msg: e.code, backgroundColor: Colors.red);
+
+            }
+
+
+
+
           },color: const Color(0xff8B20BB),),
           SizedBox(height: 30.sp,),
           Text('SignIn with',
@@ -169,21 +195,101 @@ class _SignInScreenState extends State<SignInScreen> {
           CustomButton(
               textColor: const Color(0xff8B20BB),
               text: 'Google', onPressed: () async{
-            try {
-              UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
-                  email: emailController.text,
-                  password: passController.text,
+
+
+
+            print('========================>');
+            FirebaseAuth auth = FirebaseAuth.instance;
+            User? user;
+
+
+            final GoogleSignIn googleSignIn = GoogleSignIn();
+
+            final GoogleSignInAccount? googleSignInAccount =
+            await googleSignIn.signIn();
+
+
+            if (googleSignInAccount != null) {
+              final GoogleSignInAuthentication
+              googleSignInAuthentication =
+              await googleSignInAccount.authentication;
+
+              final AuthCredential credential =
+              GoogleAuthProvider.credential(
+                accessToken: googleSignInAuthentication
+                    .accessToken,
+                idToken: googleSignInAuthentication.idToken,
               );
-              emailController.clear();
-              passController.clear();
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePageView()));
-            } on FirebaseAuthException catch (e) {
-              if (e.code == 'user-not-found') {
-                print('No user found for that email.');
-              } else if (e.code == 'wrong-password') {
-                print('Wrong password provided for that user.');
+
+              try {
+                final UserCredential userCredential =
+                await auth.signInWithCredential(credential);
+
+                user = userCredential.user;
+              } on FirebaseAuthException catch (e) {
+                Fluttertoast.showToast(msg: e.code);
               }
+
+
+              Navigator.of(context)
+                  .pushReplacement(
+                  MaterialPageRoute(builder: (context) {
+                    return  GmailInformationScreen(userId: user!.uid);
+                  }));
+            } else {
+              Fluttertoast.showToast(msg: 'Failed to sign in');
             }
+
+
+
+
+            // FirebaseAuth auth = FirebaseAuth.instance;
+    // User? user;
+    //
+    //
+    // final GoogleSignIn googleSignIn = GoogleSignIn();
+    //
+    // final GoogleSignInAccount? googleSignInAccount =
+    // await googleSignIn.signIn();
+    //
+    //
+    // if (googleSignInAccount != null) {
+    //   final GoogleSignInAuthentication
+    //   googleSignInAuthentication =
+    //   await googleSignInAccount.authentication;
+    //
+    //   final AuthCredential credential =
+    //   GoogleAuthProvider.credential(
+    //     accessToken: googleSignInAuthentication
+    //         .accessToken,
+    //     idToken: googleSignInAuthentication.idToken,
+    //   );
+    //
+    //   try {
+    //     final UserCredential userCredential =
+    //     await auth.signInWithCredential(credential);
+    //
+    //
+    //
+    //     user = userCredential.user;
+    //
+    //     if(user != null){
+    //       Navigator.of(context)
+    //           .pushReplacement(
+    //           MaterialPageRoute(builder: (context) {
+    //             return  GmailInformationScreen(userId: user!.uid);
+    //           }));
+    //     }
+    //
+    //
+    //   } on FirebaseAuthException catch (e) {
+    //     Fluttertoast.showToast(msg: e.code);
+    //   }
+    //
+
+
+   // }
+
           }, color: Colors.white),
           SizedBox(height: 300.sp,),
         ],

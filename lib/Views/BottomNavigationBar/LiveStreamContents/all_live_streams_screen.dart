@@ -189,7 +189,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                               Expanded(child: CircleAvatar(
                                 radius: 10.sp,
                                 child: const Image(image: AssetImage(
-                              'assets/Rectangle 8.png'
+                              'assets/Rectangle-8.png'
                             ),),
                           )),
                           Expanded(
@@ -221,7 +221,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                             alignment: Alignment.center,
                             child: Image(
                               image: const AssetImage(
-                                'assets/Rectangle 8.png',
+                                'assets/Rectangle-8.png',
                               ),
                               height: 216.sp,
                               width: 155.sp,
@@ -319,7 +319,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                             alignment: Alignment.center,
                             child: Image(
                               image: const AssetImage(
-                                'assets/Rectangle 7 (2).png',
+                                'assets/Rectangle-7-(2).png',
                               ),
                               height: 216.sp,
                               width: 155.sp,
@@ -385,7 +385,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                               Expanded(child: CircleAvatar(
                                 radius: 10.sp,
                                 child: const Image(image: AssetImage(
-                                    'assets/Rectangle 8.png'
+                                    'assets/Rectangle-8.png'
                                 ),),
                               )),
                               Expanded(
@@ -420,7 +420,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                       alignment: Alignment.topCenter,
                       child: Image(
                         image: AssetImage(
-                          'assets/Group 9079.png',
+                          'assets/Group-9079.png',
                         ),
 
                       ),
@@ -440,7 +440,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                             alignment: Alignment.center,
                             child: Image(
                               image: const AssetImage(
-                                'assets/Rectangle 7 (2).png',
+                                'assets/Rectangle-7-(2).png',
                               ),
                               height: 216.sp,
                               width: 155.sp,
@@ -506,7 +506,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                               Expanded(child: CircleAvatar(
                                 radius: 10.sp,
                                 child: const Image(image: AssetImage(
-                                    'assets/Rectangle 8.png'
+                                    'assets/Rectangle-8.png'
                                 ),),
                               )),
                               Expanded(
@@ -538,7 +538,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                             alignment: Alignment.center,
                             child: Image(
                               image: const AssetImage(
-                                'assets/Rectangle 7 (3).png',
+                                'assets/Rectangle-7-(3).png',
                               ),
                               height: 216.sp,
                               width: 155.sp,
@@ -604,7 +604,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                               Expanded(child: CircleAvatar(
                                 radius: 10.sp,
                                 child: const Image(image: AssetImage(
-                                    'assets/Rectangle 8.png'
+                                    'assets/Rectangle-8.png'
                                 ),),
                               )),
                               Expanded(
@@ -636,7 +636,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                             alignment: Alignment.center,
                             child: Image(
                               image: const AssetImage(
-                                'assets/Rectangle 7 (2).png',
+                                'assets/Rectangle-7-(2).png',
                               ),
                               height: 216.sp,
                               width: 155.sp,
@@ -702,7 +702,7 @@ class _AllLiveStreamsScreenState extends State<AllLiveStreamsScreen> {
                               Expanded(child: CircleAvatar(
                                 radius: 10.sp,
                                 child: const Image(image: AssetImage(
-                                    'assets/Rectangle 8.png'
+                                    'assets/Rectangle-8.png'
                                 ),),
                               )),
                               Expanded(

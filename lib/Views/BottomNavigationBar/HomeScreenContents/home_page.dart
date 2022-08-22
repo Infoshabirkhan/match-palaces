@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: const Image(
-                image: AssetImage('assets/Rectangle 6.png'),
+                image: AssetImage('assets/Rectangle-6.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -186,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: const Image(
-                    image: AssetImage('assets/Rectangle 7 (1).png'),
+                    image: AssetImage('assets/Rectangle-7-(1).png'),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -196,7 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: const Image(
-                    image: AssetImage('assets/Rectangle 7.png'),
+                    image: AssetImage('assets/Rectangle-7.png'),
                     fit: BoxFit.contain,
                   ),
                 ),

@@ -33,6 +33,10 @@ dependencies:
   flutter_screenutil: ^5.5.3+2
   flutter_bloc: ^8.0.1
   firebase_auth:
+  fluttertoast: ^8.0.8
+  cloud_firestore: ^3.4.5
+  agora_rtc_engine: ^5.3.0
+  google_sign_in: ^5.4.1
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -93,7 +93,7 @@ class _StreamerDetailsScreenmState extends State<StreamerDetailsScreenm> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(80.sp),
                 child: const Image(
-                  image: AssetImage('assets/Rectangle 7 (5).png',
+                  image: AssetImage('assets/Rectangle-7-(5).png',
                   ),
                   fit: BoxFit.fill,
                 ),
@@ -241,7 +241,7 @@ class _StreamerDetailsScreenmState extends State<StreamerDetailsScreenm> {
                         alignment: Alignment.center,
                         child: Image(
                           image: const AssetImage(
-                            'assets/Rectangle 13.png',
+                            'assets/Rectangle-13.png',
                           ),
                           fit: BoxFit.fill,
                           height: 216.sp,
@@ -322,7 +322,7 @@ class _StreamerDetailsScreenmState extends State<StreamerDetailsScreenm> {
                         alignment: Alignment.center,
                         child: Image(
                           image: const AssetImage(
-                            'assets/Rectangle 12.png',
+                            'assets/Rectangle-12.png',
                           ),
                           fit: BoxFit.fill,
                           height: 216.sp,
@@ -484,7 +484,7 @@ class _StreamerDetailsScreenmState extends State<StreamerDetailsScreenm> {
                         alignment: Alignment.center,
                         child: Image(
                           image: const AssetImage(
-                            'assets/Rectangle 8.png',
+                            'assets/Rectangle-8.png',
                           ),
                           fit: BoxFit.fill,
                           height: 216.sp,
@@ -565,7 +565,7 @@ class _StreamerDetailsScreenmState extends State<StreamerDetailsScreenm> {
                         alignment: Alignment.center,
                         child: Image(
                           image: const AssetImage(
-                            'assets/Rectangle 13.png',
+                            'assets/Rectangle-13.png',
                           ),
                           fit: BoxFit.fill,
                           height: 216.sp,

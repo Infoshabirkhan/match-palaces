@@ -6,6 +6,7 @@ import 'package:bigo/Views/BottomNavigationBar/FavioratesContents/favoirates_scr
 import 'package:bigo/Views/BottomNavigationBar/HomeScreenContents/home_page.dart';
 import 'package:bigo/Views/BottomNavigationBar/LiveStreamContents/all_live_streams_screen.dart';
 import 'package:bigo/Views/BottomNavigationBar/page_controller.dart';
+import 'package:bigo/Views/live_streaming_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -27,6 +28,17 @@ class _HomePageViewState extends State<HomePageView> {
         ),
       ],
       child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){
+
+            Navigator.of(context).push(MaterialPageRoute(builder: (context){
+
+              return LiveStreamingScreen(isBroadcaster: true);
+            }));
+
+          },
+          child: Text('Live'),
+        ),
         body: SafeArea(
           child: PageView(
             controller: PageViewController.controller,
@@ -118,4 +130,5 @@ class _HomePageViewState extends State<HomePageView> {
       ),
     );
   }
+
 }
