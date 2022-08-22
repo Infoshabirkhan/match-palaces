@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "360938260138",
+    "project_id": "matchpalace",
+    "storage_bucket": "matchpalace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360938260138:android:254fe739622d9f62f132d3",
+        "android_client_info": {
+          "package_name": "com.example.matchpalace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360938260138-vn6r3016btqqiuu2lk4g5u0bi9i4i4ta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.matchpalace",
+            "certificate_hash": "61a5a75062076755e032d98e5c807ace7d620cf8"
+          }
+        },
+        {
+          "client_id": "360938260138-pdnf0poulg9mulngr5i5085ceopkqhbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGTuQ9xtJGLuZZgbzG3_ycehVWgiimqLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360938260138-pdnf0poulg9mulngr5i5085ceopkqhbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
